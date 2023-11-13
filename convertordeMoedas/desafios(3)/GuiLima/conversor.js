@@ -1,6 +1,6 @@
 
-var valorBitCoin = 0.0000055
-var valorReais = 30
-var valorCalculado = valorReais * valorBitCoin
+var valorBitCoin = 180894.60
+var bitCoin = 1
+var valorCalculado = bitCoin* valorBitCoin
 
 alert(valorCalculado)
