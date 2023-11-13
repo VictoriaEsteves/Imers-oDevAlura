@@ -1,4 +1,4 @@
 var valorEmDolar = 30
 var cotacaoDollar = 4.91
 var valorEmReal = valorEmDolar*cotacaoDollar
-alert(valorEmReal.toFixed(2))
+alert(`R$ ${valorEmReal.toFixed(2)}`)
