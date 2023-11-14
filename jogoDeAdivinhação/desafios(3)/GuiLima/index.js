@@ -9,7 +9,7 @@ while(chute != numSecreto){
         alert("Parabens voce acertou!!")
     } else if (chute < numSecreto) {
         alert(`Você errou... o numero é maior que o numero digitado!`)
-    } else if (chute > numSecreto) {
+    } else if (chute > 1000) {
         alert(`Digite um numero valido!`)
     } else {
         alert(`Você errou... O numero é menor que o numero digitado!`)

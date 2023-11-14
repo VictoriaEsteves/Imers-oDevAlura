@@ -11,7 +11,7 @@ while(chute != numSecreto){
         alert(`Parabens voce acertou!! Foram ${tentativas} tentativas!!`)
     } else if (chute < numSecreto) {
         alert(`Você errou... o numero secreto é maior, ate agora foram ${tentativas} tentativas!!`)
-    } else if (chute > numSecreto) {
+    } else if (chute > 1000) {
         alert(`Digite um numero valido!`)
     } else {
         alert(`Você errou... O numero secreto é menor, ate agora foram ${tentativas} tentativas!!`)
