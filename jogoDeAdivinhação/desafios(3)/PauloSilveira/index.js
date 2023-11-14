@@ -1,20 +1,20 @@
 
 
-var numSecreto = parseInt(Math.random() * 1001)
+var numSecreto = 666
 var tentativas = 1
 
-while (chute != numSecreto) {
-    
-    var chute = prompt("Digite um numero de 1 a 1000");
+while(chute != numSecreto){
 
-    if (chute == numSecreto) {
-        alert(`Parabens voce acertou em ${tentativas} tentativas!!`);
+    var chute = prompt("Digite um numero de 1 a 1000")
+
+    if(chute == numSecreto) {
+        alert(`Parabens voce acertou!! Foram ${tentativas} tentativas!!`)
     } else if (chute < numSecreto) {
-        alert(`Você errou... o numero é maior que o numero digitado!`);
+        alert(`Você errou... o numero secreto é maior, ate agora foram ${tentativas} tentativas!!`)
     } else if (chute > numSecreto) {
-        alert(`Você errou... O numero é menor que o numero digitado!`);
+        alert(`Digite um numero valido!`)
     } else {
-        alert(`Digite um numero valido!`);
+        alert(`Você errou... O numero secreto é menor, ate agora foram ${tentativas} tentativas!!`)
     }
   tentativas++;
 }
