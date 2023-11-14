@@ -1,6 +1,6 @@
 
 
-var numSecreto = 666
+var numSecreto = parseInt(Math.random() * 1001)
 var tentativas = 1
 
 while(chute != numSecreto){
