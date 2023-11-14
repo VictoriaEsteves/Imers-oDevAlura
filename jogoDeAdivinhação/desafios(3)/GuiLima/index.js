@@ -1,5 +1,5 @@
 
-var numSecreto = parseInt(Math.random() * 1001 + 1)
+var numSecreto = parseInt(Math.random() * 1001) + 1
 
 while(chute != numSecreto){
 
