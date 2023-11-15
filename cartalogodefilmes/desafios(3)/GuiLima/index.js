@@ -9,7 +9,7 @@ listaFilmes[2] = 'https://upload.wikimedia.org/wikipedia/pt/4/40/Alice_in_Border
 
 for(var i=0;i < listaFilmes.length; i++) {
 
-document.write("<img src=" + listaFilmes[i] + ">")
 document.write(nomesFilmes[i])
+document.write("<img src=" + listaFilmes[i] + ">")
 
 }
