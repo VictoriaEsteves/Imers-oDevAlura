@@ -2,9 +2,13 @@ var listaFilmes = ['https://cinepop.com.br/wp-content/uploads/2016/12/shadowhunt
 
 var nomesFilmes = ['Shadowhunter', 'Breaking Bad', 'Alice in Borderland', 'Suits', 'Narcos', 'O Mundo Sombrio de Sabrina', 'Supernatural', 'The Witcher' ]
 
+document.write('<div class="container_TDFilmes">')
 for(var i=0;i < listaFilmes.length; i++) {
 
-document.write("<img src=" + listaFilmes[i] + ">")
-document.write(nomesFilmes[i])
+    document.write('<div class="CTfilme">')
+    document.write('<p>' + nomesFilmes[i] + '</p>');
+    document.write("<img class='cartaz' src=" + listaFilmes[i] + ">")
+    document.write('</div>')
 
 }
+document.write('</div>')
