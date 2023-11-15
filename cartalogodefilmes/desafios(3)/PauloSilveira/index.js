@@ -3,11 +3,13 @@ var nomesFilmes = ['Shadowhunter', 'Breaking Bad', 'Alice in Borderland', 'Suits
 
 document.write('<div class="container_TDFilmes">')
 
+/*
 for(var i=0; i < listaFilmes.length; i++) {
   document.write('<div class="CTfilme">')
   document.write("<img class='cartaz' src=" + listaFilmes[i] + ">")
   document.write('<p>' + nomesFilmes[i] + '</p>');
   document.write('</div>')
 }
-document.write('</div>')
+*/
 
+document.write('</div>')
