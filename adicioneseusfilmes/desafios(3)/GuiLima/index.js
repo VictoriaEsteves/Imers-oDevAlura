@@ -14,6 +14,8 @@ function adicionarFilme() {
 
 function carregarFilmes() {
     var espacoFilmes = document.getElementById('listaFilmes')
+    espacoFilmes.innerHTML = '';
+    
     for(var i = 0; i < arrayFilmes.length; i++) {
         var filme = arrayFilmes[i]
         var imgFilme = document.createElement('img');
