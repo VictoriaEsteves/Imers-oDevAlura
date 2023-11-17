@@ -22,14 +22,14 @@ elementoTabela.innerHTML = `
 <td>${victoria.empate}</td>
 <td>${victoria.derrota}</td>
 <td>${victoria.pontos}</td>
-<td><button onClick="adicionarVitoria()">Vitória</button></td>
-<td><button onClick="adicionarEmpate()">Empate</button></td>
-<td><button onClick="adicionarDerrota()">Derrota</button></td>
+<td><button onClick="adicionarVitoria(victoria)">Vitória</button></td>
+<td><button onClick="adicionarEmpate(victoria)">Empate</button></td>
+<td><button onClick="adicionarDerrota(victoria)">Derrota</button></td>
 </tr>
 `
 
 function adicionarVitoria(jogador) {
-console.log(victoria)
+
 }
 
 function adicionarEmpate() {
