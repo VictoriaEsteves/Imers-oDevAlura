@@ -34,11 +34,6 @@ body {
     right: 10px;
   }
   
-  #listaFilmes img {
-    margin: 10px;
-    max-height: 250px;
-  }
-  
   .form-wrapper {
     margin: 0 0 15px;
   }
@@ -65,4 +60,7 @@ body {
   .form-wrapper button:hover {
     opacity: 0.8;
 }
-  
+  #listaCartaz img {
+  margin: 10px;
+  max-height: 250px;
+}
