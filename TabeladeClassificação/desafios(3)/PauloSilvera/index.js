@@ -5,14 +5,16 @@ function adicionarPlayer() {
     var nomeJgr = document.getElementById('players').value;
     
     var novoJogador = {
-      nome: nomeJgr,
-      vitoria: 0,
-      empate: 0,
-      derrota: 0,
-      pontos: 0
+        nome: nomeJgr,
+        vitoria: 0,
+        empate: 0,
+        derrota: 0,
+        pontos: 0
     };
     
     listaDeJogadores.push(novoJogador);
+    
+    document.getElementById('players').value = '';
     
     exibirNaTela();
   }
