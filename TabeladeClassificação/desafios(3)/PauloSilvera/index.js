@@ -1,26 +1,47 @@
-var filmeFavorito = []
-var trailerFavorito = []
+var listaDeJogadores = []
 
-function adicionarFilme() {
-    var valorFilme = document.getElementById('filme').value
-    var valorTrailer = document.getElementById('trailer').value
+function exibirNaTela() {
+    elementoTabela.innerHTML = '';
 
-    if(valorFilme.endsWith('jpg') || valorFilme.endsWith('JPG')) {
-        filmeFavorito.push(valorFilme)
-        trailerFavorito.push(valorTrailer)
-        document.getElementById('filme').value = ''
-        document.getElementById('trailer').value = ''
+    for(var i = 0; i < listaDeJogadores.length; i++) {
+        var jogador = listaDeJogadores[i]
 
-        carregarCartaz()
-    }
-}
-
-function carregarCartaz() {
-    var espaçoCartaz = document.getElementById('listaCartaz')
-    espaçoCartaz.innerHTML = ''
-
-    for(var i = 0; i < filmeFavorito.length; i++) {
-        espaçoCartaz.innerHTML += `<a href="${trailerFavorito[i]}"><img src="${filmeFavorito[i]}"></a>`
+        elementoTabela.innerHTML += `<tr>
+        <td>${jogador.nome}</td>
+        <td>${jogador.vitoria}</td>
+        <td>${jogador.empate}</td>
+        <td>${jogador.derrota}</td>
+        <td>${jogador.pontos}</td>
+        <td><button onClick="adicionarVitoria(${i})">Vitória</button></td>
+        <td><button onClick="adicionarEmpate(${i})">Empate</button></td>
+        <td><button onClick="adicionarDerrota(${i})">Derrota</button></td>
+        </tr>`
     }
 
 }
+
+    function adicionarVitoria(index) {
+        var  jogador = listaDeJogadores[index]
+
+        jogador.vitoria++;
+        jogador.pontos += 3;
+
+        exibirNaTela()
+    }
+
+    function adicionarEmpate(index) {
+        var  jogador = listaDeJogadores[index]
+
+        jogador.empate++;
+        jogador.pontos++;
+
+        exibirNaTela()
+    }
+
+    function adicionarDerrota(index) {
+        var  jogador = listaDeJogadores[index]
+
+        jogador.derrota++;
+
+        exibirNaTela()
+    }
