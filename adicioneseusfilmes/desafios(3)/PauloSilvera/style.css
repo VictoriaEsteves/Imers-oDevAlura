@@ -65,3 +65,8 @@ body {
   margin: 10px;
   max-height: 250px;
 }
+
+  #listaCartaz img:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(245, 245, 245, 0.158);
+  }
