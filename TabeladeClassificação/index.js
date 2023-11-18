@@ -15,6 +15,10 @@ var lucas = {
 }
 
 var elementoTabela = document.getElementById('tabelaJogadores')
+
+exibirNaTela()
+
+function exibirNaTela() {
 elementoTabela.innerHTML = `
 <tr>
 <td>${victoria.nome}</td>
@@ -27,15 +31,21 @@ elementoTabela.innerHTML = `
 <td><button onClick="adicionarDerrota(victoria)">Derrota</button></td>
 </tr>
 `
+}
 
 function adicionarVitoria(jogador) {
-
+  jogador.vitoria++
+  jogador.pontos = jogador.pontos + 3
+  exibirNaTela()
 }
 
-function adicionarEmpate() {
-
+function adicionarEmpate(jogador) {
+  jogador.empate++
+  jogador.pontos = jogador.pontos + 1
+  exibirNaTela()
 }
 
-function adicionarDerrota() {
-
+function adicionarDerrota(jogador) {
+  jogador.derrota++
+  exibirNaTela()
 }
