@@ -8,7 +8,7 @@ function adicionarPlayer() {
         nome: nick,
         ganhas: 0,
         empate: 0,
-        partidasperdidas: 0,
+        perdidas: 0,
         PdL: 0,
     }
 
@@ -33,6 +33,7 @@ function adicionarPlayer() {
             <td><button onClick="adicionarGanhas(${i})">Ganhas</button></td>
             <td><button onClick="adicionarEmpate(${i})">Empate</button></td>
             <td><button onClick="adicionarPerdidas(${i})">Perdidas</button></td>
+            <td><button onClick="adicionarPdL(${i})">PdL Ganho</button></td>
             <td><button onClick="removerJogador(${i})">Remover</button></td>
             </tr>`
         }
@@ -51,10 +52,28 @@ function adicionarPlayer() {
 
         jogador.empate++
 
+        exibirNaTela()
+    }
+
+    function adicionarPerdidas() {
+
+        jogador.perdidas++
 
         exibirNaTela()
     }
 
+    function adicionarPdL() {
+
+        jogador.PdL++;
+
+        exibirNaTela()
+    }
+
+    function removerJogador(index) {
+
+        listaDeJogadores.splice(index, 1)
+        exibirNaTela()
+    }
 
 
 
