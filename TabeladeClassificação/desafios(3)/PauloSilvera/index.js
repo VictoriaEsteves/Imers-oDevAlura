@@ -19,12 +19,12 @@ function adicionarPlayer() {
 
 
 function exibirNaTela() {
-    elementoTabela.innerHTML = '';
+    tabelaJogadores.innerHTML = '';
 
     for(var i = 0; i < listaDeJogadores.length; i++) {
         var jogador = listaDeJogadores[i]
 
-        elementoTabela.innerHTML += `<tr>
+        tabelaJogadores.innerHTML += `<tr>
         <td>${jogador.nome}</td>
         <td>${jogador.vitoria}</td>
         <td>${jogador.empate}</td>
@@ -33,6 +33,7 @@ function exibirNaTela() {
         <td><button onClick="adicionarVitoria(${i})">Vitória</button></td>
         <td><button onClick="adicionarEmpate(${i})">Empate</button></td>
         <td><button onClick="adicionarDerrota(${i})">Derrota</button></td>
+        <td><button onClick="removerJogador(${i})">Remover</button></td>
         </tr>`
     }
 
@@ -61,5 +62,10 @@ function exibirNaTela() {
 
         jogador.derrota++;
 
+        exibirNaTela()
+    }
+
+    function removerJogador(index) {
+        listaDeJogadores.splice(index, 1)
         exibirNaTela()
     }
