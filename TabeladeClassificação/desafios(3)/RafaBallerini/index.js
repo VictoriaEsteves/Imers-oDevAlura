@@ -39,7 +39,7 @@ function adicionarPlayer() {
         }
     }
 
-    function adicionarGanhas() {
+    function adicionarGanhas(index) {
         var jogador = time[index]
 
         jogador.ganhas++;
@@ -48,21 +48,21 @@ function adicionarPlayer() {
 
     }
 
-    function adicionarEmpate() {
+    function adicionarEmpate(index) {
 
         jogador.empate++
 
         exibirNaTela()
     }
 
-    function adicionarPerdidas() {
+    function adicionarPerdidas(index) {
 
         jogador.perdidas++
 
         exibirNaTela()
     }
 
-    function adicionarPdL() {
+    function adicionarPdL(index) {
 
         jogador.PdL++;
 
