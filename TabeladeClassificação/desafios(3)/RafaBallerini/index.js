@@ -49,6 +49,7 @@ function adicionarPlayer() {
     }
 
     function adicionarEmpate(index) {
+        var jogador = time[index]
 
         jogador.empate++
 
@@ -56,6 +57,7 @@ function adicionarPlayer() {
     }
 
     function adicionarPerdidas(index) {
+        var jogador = time[index]
 
         jogador.perdidas++
 
@@ -63,6 +65,7 @@ function adicionarPlayer() {
     }
 
     function adicionarPdL(index) {
+        var jogador = time[index]
 
         jogador.PdL++;
 
