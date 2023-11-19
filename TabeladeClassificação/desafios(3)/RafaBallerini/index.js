@@ -60,6 +60,7 @@ function adicionarPlayer() {
         var jogador = time[index]
 
         jogador.perdidas++
+        jogador.PdL -= 5
 
         exibirNaTela()
     }
@@ -67,7 +68,7 @@ function adicionarPlayer() {
     function adicionarPdL(index) {
         var jogador = time[index]
 
-        jogador.PdL++;
+        jogador.PdL+= 10
 
         exibirNaTela()
     }
