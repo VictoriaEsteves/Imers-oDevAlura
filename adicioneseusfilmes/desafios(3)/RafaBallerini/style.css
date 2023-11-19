@@ -64,6 +64,8 @@ body {
   #listaCartaz img {
   margin: 10px;
   max-height: 250px;
+
+  border-radius: 10px;
 }
 
   #listaCartaz img:hover {
