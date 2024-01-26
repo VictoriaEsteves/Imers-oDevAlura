@@ -18,8 +18,7 @@ function displayResults(result) {
         artistName.innerText = element.name;
         artistImage.src = element.urlImg;
     });
-
-    resultArtist.classList.remove('hidden');
+    resultArtist.classList.remove("hidden");
 }
 
 document.addEventListener('input', function () {
